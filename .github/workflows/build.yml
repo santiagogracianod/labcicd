@@ -9,7 +9,7 @@ on:
       - main
 jobs:
   #Test's job
-  test:
+  tests:
     name: Unit test
     #Run on Ubuntu using the latest version
     runs-on: ubuntu-latest
