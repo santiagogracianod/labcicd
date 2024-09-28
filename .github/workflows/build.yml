@@ -99,7 +99,7 @@ jobs:
       #Build the application using Maven
       - name: Build with Maven
         run: mvn -B package -DskipTests --file pom.xml
-      #Build the application using Mavenn
+      #Build the application using Maven
       - name: Upload JAR
         #This uploads artifacts from your workflow allowing you to share data between jobs and store data once a workflow is complete.
         uses: actions/upload-artifact@v3
@@ -113,7 +113,7 @@ jobs:
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: santiagograciano98/gitlab
+          image: santiagograciano98/labcicd
           tags: latest
           registry: docker.io
           dockerfile: Dockerfile
